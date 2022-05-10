@@ -1,4 +1,12 @@
 Programmers: Alexander Perez , Charlotte Osburn
 Date: 5/9/22
 Program: Java Script
-Share test
+
+
+async function startProgram() {
+	//Start
+	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true)
+	await roll(0, 200, 1.15)
+	setMainLed({ r: 90, g: 90, b: 255 })
+	//Blue check
+}
