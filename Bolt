@@ -4,9 +4,21 @@ Program: Java Script
 
 
 async function startProgram() {
-	//Start
-	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true)
-	await roll(0, 200, 1.15)
-	setMainLed({ r: 90, g: 90, b: 255 })
-	//Blue check
+await scrollMatrixText('START', { r: 255, g: 0, b: 0 }, 30, true)
+await roll(0,80,2)
+setMainLed ({r: 0, g: 0, b: 255})
+//bluecheck
+await roll (90,28,0.23)
+await roll (90,57,2)
+await roll (170,67,1)
+await Sound.Animal.play(true)
+//soundcheck1
+await roll (220,60,1.4)
+await roll (165,60,0.35)
+setMainLed ({r: 255, g: 0, b: 0})
+await roll(120,50,0.3)
+await roll(120,50,0.5)
+await roll (45, 60, 0.9)
+await roll (25, 28,0.3)
+await Sound.Animal.play(true)
 }
